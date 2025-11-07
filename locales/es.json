@@ -1,0 +1,94 @@
+{
+  "common": {
+    "greeting": "Hola",
+    "farewell": "Adiós"
+  },
+  "landing": {
+    "brand": "Kraft",
+    "nav": {
+      "product": "Producto",
+      "pricing": "Precios",
+      "resources": "Recursos",
+      "contact": "Contacto"
+    },
+    "language": {
+      "label": "Idioma",
+      "english": "English",
+      "spanish": "Español"
+    },
+    "hero": {
+      "tagline": "Organiza. Colabora. Entrega.",
+      "title": "Una plataforma de producto que mantiene a tu equipo sincronizado",
+      "subtitle": "Planifica roadmaps, alinea prioridades y lanza funciones más rápido con un espacio de trabajo diseñado para equipos modernos.",
+      "primaryCta": "Comienza gratis",
+      "secondaryCta": "Ver precios"
+    },
+    "stats": [
+      {
+        "label": "Equipos impulsados",
+        "value": "8k+"
+      },
+      {
+        "label": "Velocidad promedio de entrega",
+        "value": "32% más rápido"
+      },
+      {
+        "label": "Satisfacción del cliente",
+        "value": "4.8/5"
+      }
+    ],
+    "features": {
+      "title": "Todo lo que necesitas para lanzar y crecer",
+      "items": [
+        {
+          "title": "Espacio de trabajo unificado",
+          "description": "Reúne briefs, diseños, comentarios y actualizaciones de sprint en un solo lugar."
+        },
+        {
+          "title": "Insights, no ruido",
+          "description": "Detecta automáticamente tendencias de feedback, solicitudes y brechas de prioridad en todos los canales."
+        },
+        {
+          "title": "Lanza con confianza",
+          "description": "Coordina tareas de lanzamiento y controla dependencias para que cada release llegue a tiempo."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Equipos ágiles confían en nosotros",
+      "quote": "“Kraft mantiene a cada escuadrón alineado y enfocado. Nuestros ciclos de lanzamiento son más cortos y nuestros releases más fluidos.”",
+      "author": "Elena Ramírez",
+      "role": "Directora de Producto, Northwind Tech"
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Podemos invitar colaboradores de otros departamentos?",
+          "answer": "Claro. Puedes invitar colaboradores ilimitados, compartir espacios personalizados y controlar el acceso con permisos granulares."
+        },
+        {
+          "question": "¿Kraft se integra con nuestras herramientas actuales?",
+          "answer": "Sí. Conecta Slack, Jira, GitHub y más de 30 herramientas para mantener sincronizada tu fuente de la verdad."
+        },
+        {
+          "question": "¿Existe un plan gratuito?",
+          "answer": "Kraft ofrece un plan gratuito para hasta 5 editores y espectadores ilimitados para que explores antes de mejorar."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para acelerar tu próximo lanzamiento?",
+      "description": "Únete a miles de líderes de producto que confían en Kraft para entregar funciones que sus clientes aman.",
+      "primaryCta": "Crea tu cuenta",
+      "secondaryCta": "Agenda una demo"
+    },
+    "footer": {
+      "copyright": "© {{year}} Kraft. Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "status": "Estado"
+    }
+  }
+}
+

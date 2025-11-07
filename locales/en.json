@@ -1,0 +1,95 @@
+{
+  "common": {
+    "greeting": "Hello",
+    "farewell": "Goodbye"
+  },
+  "landing": {
+    "brand": "Kraft",
+    "nav": {
+      "product": "Product",
+      "pricing": "Pricing",
+      "resources": "Resources",
+      "contact": "Contact"
+    },
+    "language": {
+      "label": "Language",
+      "english": "English",
+      "spanish": "Español"
+    },
+    "hero": {
+      "tagline": "Organize. Collaborate. Deliver.",
+      "title": "A product platform that keeps your entire team in sync",
+      "subtitle": "Plan roadmaps, align priorities, and launch features faster with a workspace designed for modern product teams.",
+      "primaryCta": "Start for free",
+      "secondaryCta": "View pricing"
+    },
+    "stats": [
+      {
+        "label": "Teams powered",
+        "value": "8k+"
+      },
+      {
+        "label": "Avg. delivery speed",
+        "value": "32% faster"
+      },
+      {
+        "label": "Customer satisfaction",
+        "value": "4.8/5"
+      }
+    ],
+    "features": {
+      "title": "Everything you need to launch and grow",
+      "items": [
+        {
+          "title": "Unified workspace",
+          "description": "Bring product briefs, design files, feedback, and sprint updates together in one place."
+        },
+        {
+          "title": "Insights, not noise",
+          "description": "Automatically surface customer feedback trends, feature requests, and priority gaps across channels."
+        },
+        {
+          "title": "Launch with confidence",
+          "description": "Coordinate go-to-market tasks and track dependencies so every launch ships on time."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Trusted by fast-moving teams",
+      "quote": "“Kraft keeps every squad aligned and focused. Our release cycles are shorter and our launches are smoother than ever.”",
+      "author": "Elena Ramirez",
+      "role": "Director of Product, Northwind Tech"
+    },
+    "faqs": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Can we invite collaborators from other departments?",
+          "answer": "Absolutely. You can invite unlimited collaborators, share tailored workspaces, and control access with granular permissions."
+        },
+        {
+          "question": "Does Kraft integrate with our current tools?",
+          "answer": "Yes. Connect Slack, Jira, GitHub, and over 30 other tools to keep your sources of truth in sync."
+        },
+        {
+          "question": "Is there a free plan?",
+          "answer": "Kraft offers a generous free plan for up to 5 editors and unlimited viewers so you can explore before upgrading."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to accelerate your next launch?",
+      "description": "Join thousands of product leaders who rely on Kraft to deliver features their customers love.",
+      "primaryCta": "Create your account",
+      "secondaryCta": "Book a demo"
+    },
+    "footer": {
+      "copyright": "© {{year}} Kraft. All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "status": "Status"
+    }
+  }
+}
+
+
