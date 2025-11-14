@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error -- next-pwa does not publish type definitions
 import withPWA from "next-pwa";
 
