@@ -7,15 +7,25 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "build:mobile": "NEXT_OUTPUT=export next build",
+    "cap:sync": "npx cap sync",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android",
     "storybook": "storybook dev -p 6006 -c .storybooks",
     "build-storybook": "storybook build -c .storybooks"
   },
   "dependencies": {
+    "@capacitor/app": "^6.0.2",
+    "@capacitor/core": "^6.1.2",
     "next": "16.0.1",
+    "next-pwa": "^5.6.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/ios": "^6.1.2",
     "@storybook/addon-essentials": "8.4.7",
     "@storybook/addon-links": "8.4.7",
     "@storybook/nextjs": "8.4.7",
