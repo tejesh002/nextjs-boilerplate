@@ -2,6 +2,9 @@
 FROM node:20-alpine AS deps
 WORKDIR /app
 
+# Update npm to latest compatible version
+RUN npm install -g npm@latest
+
 # Copy package files
 COPY package.json package-lock.json ./
 
@@ -11,6 +14,9 @@ RUN npm ci --legacy-peer-deps
 # Stage 2: Builder
 FROM node:20-alpine AS builder
 WORKDIR /app
+
+# Update npm to latest compatible version
+RUN npm install -g npm@latest
 
 # Copy dependencies from deps stage
 COPY --from=deps /app/node_modules ./node_modules
@@ -44,9 +50,9 @@ RUN chown -R nextjs:nodejs /app
 
 USER nextjs
 
-EXPOSE 3000
+EXPOSE 3001
 
-ENV PORT=3000
+ENV PORT=3001
 ENV HOSTNAME="0.0.0.0"
 
 CMD ["node", "server.js"]

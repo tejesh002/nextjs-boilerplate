@@ -49,7 +49,7 @@ npm install --legacy-peer-deps
 npm run dev
 ```
 
-Access the app at [http://localhost:3000](http://localhost:3000).
+Access the app at [http://localhost:3001](http://localhost:3001).
 
 ### Windows
 
@@ -91,7 +91,7 @@ Docker allows you to run the Next.js application in a containerized environment,
 docker build -f docker/Dockerfile -t kraft-frontend .
 
 # Run the container
-docker run -p 3000:3000 kraft-frontend
+docker run -p 3001:3001 kraft-frontend
 ```
 
 Or using Docker Compose:
@@ -126,7 +126,7 @@ docker-compose -f docker-compose.dev.yml down
 | Command | Description |
 | --- | --- |
 | `docker build -f docker/Dockerfile -t kraft-frontend .` | Build production image |
-| `docker run -p 3000:3000 kraft-frontend` | Run production container |
+| `docker run -p 3001:3001 kraft-frontend` | Run production container |
 | `docker-compose up -d` | Start production services (detached) |
 | `docker-compose -f docker-compose.dev.yml up` | Start development services |
 | `docker-compose logs -f` | Follow container logs |
@@ -139,7 +139,7 @@ docker-compose -f docker-compose.dev.yml down
 | Issue | Fix |
 | --- | --- |
 | `docker: command not found` | Install Docker Desktop and ensure it's running. |
-| Port 3000 already in use | Stop the local dev server or change the port mapping: `-p 3001:3000` |
+| Port 3001 already in use | Stop the local dev server or change the port mapping: `-p 3001:3001` |
 | Build fails with peer dependency error | The Dockerfile already uses `--legacy-peer-deps` flag. |
 | Container exits immediately | Check logs: `docker-compose logs nextjs` |
 | Permission denied on macOS/Linux | Ensure Docker Desktop has proper permissions in System Settings. |

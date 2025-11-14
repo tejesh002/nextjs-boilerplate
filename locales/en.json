@@ -17,71 +17,83 @@
       "spanish": "Español"
     },
     "hero": {
-      "tagline": "Organize. Collaborate. Deliver.",
-      "title": "A product platform that keeps your entire team in sync",
-      "subtitle": "Plan roadmaps, align priorities, and launch features faster with a workspace designed for modern product teams.",
-      "primaryCta": "Start for free",
-      "secondaryCta": "View pricing"
+      "tagline": "Next.js Boilerplate",
+      "title": "This is the boilerplate built on top of Next.js",
+      "subtitle": "A modern, production-ready starter template for building fast and scalable web applications with Next.js, featuring server-side rendering, API routes, and optimized performance out of the box.",
+      "primaryCta": "Get started",
+      "secondaryCta": "View documentation"
     },
     "stats": [
       {
-        "label": "Teams powered",
-        "value": "8k+"
+        "label": "Server-side rendering",
+        "value": "Built-in SSR"
       },
       {
-        "label": "Avg. delivery speed",
-        "value": "32% faster"
+        "label": "API routes",
+        "value": "Full-stack ready"
       },
       {
-        "label": "Customer satisfaction",
-        "value": "4.8/5"
+        "label": "Performance",
+        "value": "Optimized"
       }
     ],
     "features": {
-      "title": "Everything you need to launch and grow",
+      "title": "Next.js Features & Benefits",
       "items": [
         {
-          "title": "Unified workspace",
-          "description": "Bring product briefs, design files, feedback, and sprint updates together in one place."
+          "title": "Server-Side Rendering (SSR)",
+          "description": "Next.js provides built-in server-side rendering capabilities, improving SEO and initial page load performance by rendering pages on the server."
         },
         {
-          "title": "Insights, not noise",
-          "description": "Automatically surface customer feedback trends, feature requests, and priority gaps across channels."
+          "title": "Static Site Generation (SSG)",
+          "description": "Generate static pages at build time for optimal performance. Perfect for blogs, documentation, and content-heavy sites with pre-rendered HTML."
         },
         {
-          "title": "Launch with confidence",
-          "description": "Coordinate go-to-market tasks and track dependencies so every launch ships on time."
+          "title": "API Routes",
+          "description": "Build full-stack applications with Next.js API routes. Create backend endpoints without a separate server, keeping everything in one codebase."
+        },
+        {
+          "title": "Image Optimization",
+          "description": "Automatic image optimization with the Next.js Image component, reducing bandwidth usage and improving page load times with lazy loading and responsive images."
+        },
+        {
+          "title": "File-Based Routing",
+          "description": "Intuitive file-based routing system. Create routes by adding files to the pages or app directory - no configuration needed."
+        },
+        {
+          "title": "Built-in CSS Support",
+          "description": "Support for CSS Modules, Sass, and Tailwind CSS out of the box. Style your application with your preferred approach."
         }
       ]
     },
     "testimonials": {
-      "title": "Trusted by fast-moving teams",
-      "quote": "“Kraft keeps every squad aligned and focused. Our release cycles are shorter and our launches are smoother than ever.”",
-      "author": "Elena Ramirez",
-      "role": "Director of Product, Northwind Tech"
+      "title": "Why Next.js?",
+      "quote": "Next.js is a React framework that enables you to build full-stack web applications. It provides the best developer experience with features like automatic code splitting, optimized production builds, and seamless deployment to Vercel or any Node.js hosting.",
+      "author": "Next.js Framework",
+      "role": "Built by Vercel"
     },
     "faqs": {
       "title": "Frequently asked questions",
       "items": [
         {
-          "question": "Can we invite collaborators from other departments?",
-          "answer": "Absolutely. You can invite unlimited collaborators, share tailored workspaces, and control access with granular permissions."
+          "question": "What is Next.js?",
+          "answer": "Next.js is a React framework for production that gives you building blocks to create web applications. It handles the tooling and configuration needed for React, and provides additional structure, features, and optimizations for your application."
         },
         {
-          "question": "Does Kraft integrate with our current tools?",
-          "answer": "Yes. Connect Slack, Jira, GitHub, and over 30 other tools to keep your sources of truth in sync."
+          "question": "What makes this boilerplate special?",
+          "answer": "This boilerplate comes pre-configured with best practices, internationalization support, modern UI components, and a clean project structure. It's ready to use out of the box, saving you hours of setup time."
         },
         {
-          "question": "Is there a free plan?",
-          "answer": "Kraft offers a generous free plan for up to 5 editors and unlimited viewers so you can explore before upgrading."
+          "question": "Can I use this for production?",
+          "answer": "Yes! This boilerplate is designed with production in mind, including performance optimizations, SEO-friendly setup, and scalable architecture patterns."
         }
       ]
     },
     "cta": {
-      "title": "Ready to accelerate your next launch?",
-      "description": "Join thousands of product leaders who rely on Kraft to deliver features their customers love.",
-      "primaryCta": "Create your account",
-      "secondaryCta": "Book a demo"
+      "title": "Ready to build your Next.js application?",
+      "description": "Start building fast, scalable web applications with this production-ready Next.js boilerplate. Get up and running in minutes.",
+      "primaryCta": "Get started",
+      "secondaryCta": "View on GitHub"
     },
     "footer": {
       "copyright": "© {{year}} Kraft. All rights reserved.",

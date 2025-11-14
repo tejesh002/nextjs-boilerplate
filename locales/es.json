@@ -17,71 +17,83 @@
       "spanish": "Español"
     },
     "hero": {
-      "tagline": "Organiza. Colabora. Entrega.",
-      "title": "Una plataforma de producto que mantiene a tu equipo sincronizado",
-      "subtitle": "Planifica roadmaps, alinea prioridades y lanza funciones más rápido con un espacio de trabajo diseñado para equipos modernos.",
-      "primaryCta": "Comienza gratis",
-      "secondaryCta": "Ver precios"
+      "tagline": "Plantilla de Next.js",
+      "title": "Esta es la plantilla construida sobre Next.js",
+      "subtitle": "Una plantilla moderna y lista para producción para construir aplicaciones web rápidas y escalables con Next.js, con renderizado del lado del servidor, rutas API y rendimiento optimizado desde el inicio.",
+      "primaryCta": "Comenzar",
+      "secondaryCta": "Ver documentación"
     },
     "stats": [
       {
-        "label": "Equipos impulsados",
-        "value": "8k+"
+        "label": "Renderizado del servidor",
+        "value": "SSR integrado"
       },
       {
-        "label": "Velocidad promedio de entrega",
-        "value": "32% más rápido"
+        "label": "Rutas API",
+        "value": "Listo para full-stack"
       },
       {
-        "label": "Satisfacción del cliente",
-        "value": "4.8/5"
+        "label": "Rendimiento",
+        "value": "Optimizado"
       }
     ],
     "features": {
-      "title": "Todo lo que necesitas para lanzar y crecer",
+      "title": "Características y Beneficios de Next.js",
       "items": [
         {
-          "title": "Espacio de trabajo unificado",
-          "description": "Reúne briefs, diseños, comentarios y actualizaciones de sprint en un solo lugar."
+          "title": "Renderizado del Lado del Servidor (SSR)",
+          "description": "Next.js proporciona capacidades de renderizado del lado del servidor integradas, mejorando el SEO y el rendimiento de carga inicial de página al renderizar páginas en el servidor."
         },
         {
-          "title": "Insights, no ruido",
-          "description": "Detecta automáticamente tendencias de feedback, solicitudes y brechas de prioridad en todos los canales."
+          "title": "Generación de Sitios Estáticos (SSG)",
+          "description": "Genera páginas estáticas en tiempo de compilación para un rendimiento óptimo. Perfecto para blogs, documentación y sitios con mucho contenido con HTML pre-renderizado."
         },
         {
-          "title": "Lanza con confianza",
-          "description": "Coordina tareas de lanzamiento y controla dependencias para que cada release llegue a tiempo."
+          "title": "Rutas API",
+          "description": "Construye aplicaciones full-stack con rutas API de Next.js. Crea endpoints backend sin un servidor separado, manteniendo todo en un solo código base."
+        },
+        {
+          "title": "Optimización de Imágenes",
+          "description": "Optimización automática de imágenes con el componente Image de Next.js, reduciendo el uso de ancho de banda y mejorando los tiempos de carga de página con carga diferida e imágenes responsivas."
+        },
+        {
+          "title": "Enrutamiento Basado en Archivos",
+          "description": "Sistema de enrutamiento intuitivo basado en archivos. Crea rutas agregando archivos al directorio pages o app - no se necesita configuración."
+        },
+        {
+          "title": "Soporte CSS Integrado",
+          "description": "Soporte para CSS Modules, Sass y Tailwind CSS desde el inicio. Estiliza tu aplicación con tu enfoque preferido."
         }
       ]
     },
     "testimonials": {
-      "title": "Equipos ágiles confían en nosotros",
-      "quote": "“Kraft mantiene a cada escuadrón alineado y enfocado. Nuestros ciclos de lanzamiento son más cortos y nuestros releases más fluidos.”",
-      "author": "Elena Ramírez",
-      "role": "Directora de Producto, Northwind Tech"
+      "title": "¿Por qué Next.js?",
+      "quote": "Next.js es un framework de React que te permite construir aplicaciones web full-stack. Proporciona la mejor experiencia de desarrollador con características como división automática de código, compilaciones de producción optimizadas y despliegue sin problemas a Vercel o cualquier hosting de Node.js.",
+      "author": "Framework Next.js",
+      "role": "Construido por Vercel"
     },
     "faqs": {
       "title": "Preguntas frecuentes",
       "items": [
         {
-          "question": "¿Podemos invitar colaboradores de otros departamentos?",
-          "answer": "Claro. Puedes invitar colaboradores ilimitados, compartir espacios personalizados y controlar el acceso con permisos granulares."
+          "question": "¿Qué es Next.js?",
+          "answer": "Next.js es un framework de React para producción que te da los bloques de construcción para crear aplicaciones web. Maneja las herramientas y la configuración necesarias para React, y proporciona estructura adicional, características y optimizaciones para tu aplicación."
         },
         {
-          "question": "¿Kraft se integra con nuestras herramientas actuales?",
-          "answer": "Sí. Conecta Slack, Jira, GitHub y más de 30 herramientas para mantener sincronizada tu fuente de la verdad."
+          "question": "¿Qué hace especial a esta plantilla?",
+          "answer": "Esta plantilla viene pre-configurada con mejores prácticas, soporte de internacionalización, componentes de UI modernos y una estructura de proyecto limpia. Está lista para usar desde el inicio, ahorrándote horas de tiempo de configuración."
         },
         {
-          "question": "¿Existe un plan gratuito?",
-          "answer": "Kraft ofrece un plan gratuito para hasta 5 editores y espectadores ilimitados para que explores antes de mejorar."
+          "question": "¿Puedo usar esto para producción?",
+          "answer": "¡Sí! Esta plantilla está diseñada pensando en producción, incluyendo optimizaciones de rendimiento, configuración amigable para SEO y patrones de arquitectura escalables."
         }
       ]
     },
     "cta": {
-      "title": "¿Listo para acelerar tu próximo lanzamiento?",
-      "description": "Únete a miles de líderes de producto que confían en Kraft para entregar funciones que sus clientes aman.",
-      "primaryCta": "Crea tu cuenta",
-      "secondaryCta": "Agenda una demo"
+      "title": "¿Listo para construir tu aplicación Next.js?",
+      "description": "Comienza a construir aplicaciones web rápidas y escalables con esta plantilla de Next.js lista para producción. Comienza en minutos.",
+      "primaryCta": "Comenzar",
+      "secondaryCta": "Ver en GitHub"
     },
     "footer": {
       "copyright": "© {{year}} Kraft. Todos los derechos reservados.",
