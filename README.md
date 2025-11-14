@@ -23,3 +23,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## Mobile Builds (Capacitor)
 
 Native iOS and Android builds are supported through Capacitor. See `docs/mobile.md` for the full workflow, including how to export the web bundle and sync it into the platform projects.
+
+## Environment Setup
+
+Detailed prerequisites and OS-specific instructions for macOS and Windows (web + Android) live in `docs/setup.md`.
