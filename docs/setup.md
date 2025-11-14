@@ -71,7 +71,82 @@ npm start    # serves the build with next start
 
 ---
 
-## 4. Android Native Builds (Capacitor)
+## 4. Docker Setup (Optional)
+
+Docker allows you to run the Next.js application in a containerized environment, ensuring consistent behavior across different machines.
+
+### Prerequisites
+
+| Tool | Version | macOS | Windows |
+| --- | --- | --- | --- |
+| Docker Desktop | Latest stable | [Download](https://www.docker.com/products/docker-desktop) | [Download](https://www.docker.com/products/docker-desktop) |
+| Docker Compose | Bundled with Docker Desktop | auto | auto |
+
+### Build and Run Production Container
+
+**Both macOS and Windows:**
+
+```bash
+# Build the Docker image
+docker build -f docker/Dockerfile -t kraft-frontend .
+
+# Run the container
+docker run -p 3000:3000 kraft-frontend
+```
+
+Or using Docker Compose:
+
+```bash
+# Build and start
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop
+docker-compose down
+```
+
+Access the app at [http://localhost:3000](http://localhost:3000).
+
+### Development Mode with Docker
+
+For hot-reload development:
+
+```bash
+# Build and start development container
+docker-compose -f docker-compose.dev.yml up
+
+# Stop
+docker-compose -f docker-compose.dev.yml down
+```
+
+### Docker Commands Reference
+
+| Command | Description |
+| --- | --- |
+| `docker build -f docker/Dockerfile -t kraft-frontend .` | Build production image |
+| `docker run -p 3000:3000 kraft-frontend` | Run production container |
+| `docker-compose up -d` | Start production services (detached) |
+| `docker-compose -f docker-compose.dev.yml up` | Start development services |
+| `docker-compose logs -f` | Follow container logs |
+| `docker-compose down` | Stop and remove containers |
+| `docker ps` | List running containers |
+| `docker images` | List Docker images |
+
+### Troubleshooting Docker
+
+| Issue | Fix |
+| --- | --- |
+| `docker: command not found` | Install Docker Desktop and ensure it's running. |
+| Port 3000 already in use | Stop the local dev server or change the port mapping: `-p 3001:3000` |
+| Build fails with peer dependency error | The Dockerfile already uses `--legacy-peer-deps` flag. |
+| Container exits immediately | Check logs: `docker-compose logs nextjs` |
+| Permission denied on macOS/Linux | Ensure Docker Desktop has proper permissions in System Settings. |
+
+---
+
+## 5. Android Native Builds (Capacitor)
 
 | Dependency | macOS | Windows |
 | --- | --- | --- |
@@ -119,7 +194,7 @@ gradlew.bat assembleDebug # Windows Command Prompt / PowerShell
 
 ---
 
-## 5. Optional Tooling
+## 6. Optional Tooling
 
 - **ESLint & TypeScript checks:** `npm run lint`
 - **Storybook UI library:** `npm run storybook`
@@ -127,7 +202,7 @@ gradlew.bat assembleDebug # Windows Command Prompt / PowerShell
 
 ---
 
-## 6. Troubleshooting
+## 7. Troubleshooting
 
 | Issue | Fix |
 | --- | --- |
@@ -139,7 +214,7 @@ gradlew.bat assembleDebug # Windows Command Prompt / PowerShell
 
 ---
 
-## 7. Daily Workflow Checklist
+## 8. Daily Workflow Checklist
 
 1. `git pull` to sync latest code.
 2. `npm install --legacy-peer-deps` if dependencies changed.

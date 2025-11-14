@@ -8,7 +8,7 @@ const isExport = process.env.NEXT_OUTPUT === "export";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   turbopack: {},
-  ...(isExport && { output: "export" }),
+  output: isExport ? "export" : "standalone",
 };
 
 export default withPWA({

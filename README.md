@@ -24,6 +24,20 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 Native iOS and Android builds are supported through Capacitor. See `docs/mobile.md` for the full workflow, including how to export the web bundle and sync it into the platform projects.
 
+## Docker
+
+Run the Next.js app in a containerized environment:
+
+```bash
+# Production
+docker-compose up -d
+
+# Development (with hot-reload)
+docker-compose -f docker-compose.dev.yml up
+```
+
+See `docs/setup.md` for detailed Docker instructions and troubleshooting.
+
 ## Environment Setup
 
 Detailed prerequisites and OS-specific instructions for macOS and Windows (web + Android) live in `docs/setup.md`.
