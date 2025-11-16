@@ -20,20 +20,22 @@ export default meta;
 
 type Story = StoryObj<typeof RadioGroup>;
 
+const VerticalStory = (args: React.ComponentProps<typeof RadioGroup>) => {
+  const [value, setValue] = useState(args.value ?? "");
+  return (
+    <RadioGroup
+      {...args}
+      value={value}
+      onChange={(next) => {
+        setValue(next);
+        args.onChange?.(next);
+      }}
+    />
+  );
+};
+
 export const Vertical: Story = {
-  render: (args) => {
-    const [value, setValue] = useState(args.value ?? "");
-    return (
-      <RadioGroup
-        {...args}
-        value={value}
-        onChange={(next) => {
-          setValue(next);
-          args.onChange?.(next);
-        }}
-      />
-    );
-  },
+  render: (args) => <VerticalStory {...args} />,
 };
 
 export const Horizontal: Story = {

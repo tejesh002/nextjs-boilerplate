@@ -20,20 +20,22 @@ export default meta;
 
 type Story = StoryObj<typeof CheckboxGroup>;
 
+const VerticalStory = (args: React.ComponentProps<typeof CheckboxGroup>) => {
+  const [values, setValues] = useState(args.values ?? []);
+  return (
+    <CheckboxGroup
+      {...args}
+      values={values}
+      onChange={(next) => {
+        setValues(next);
+        args.onChange?.(next);
+      }}
+    />
+  );
+};
+
 export const Vertical: Story = {
-  render: (args) => {
-    const [values, setValues] = useState(args.values ?? []);
-    return (
-      <CheckboxGroup
-        {...args}
-        values={values}
-        onChange={(next) => {
-          setValues(next);
-          args.onChange?.(next);
-        }}
-      />
-    );
-  },
+  render: (args) => <VerticalStory {...args} />,
 };
 
 export const Horizontal: Story = {

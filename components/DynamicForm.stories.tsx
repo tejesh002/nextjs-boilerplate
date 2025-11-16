@@ -73,35 +73,37 @@ export default meta;
 
 type Story = StoryObj<typeof DynamicForm>;
 
-export const Playground: Story = {
-  render: (args) => {
-    const [submitted, setSubmitted] = useState<Record<string, unknown> | null>(null);
+const PlaygroundStory = (args: React.ComponentProps<typeof DynamicForm>) => {
+  const [submitted, setSubmitted] = useState<Record<string, unknown> | null>(null);
 
-    return (
-      <div style={{ maxWidth: "28rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
-        <DynamicForm
-          {...args}
-          onSubmit={(values) => {
-            args.onSubmit(values);
-            setSubmitted(values);
+  return (
+    <div style={{ maxWidth: "28rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
+      <DynamicForm
+        {...args}
+        onSubmit={(values) => {
+          args.onSubmit?.(values);
+          setSubmitted(values);
+        }}
+      />
+      {submitted && (
+        <pre
+          style={{
+            margin: 0,
+            padding: "1rem",
+            backgroundColor: "#f3f4f6",
+            borderRadius: "0.5rem",
+            fontSize: "0.875rem",
           }}
-        />
-        {submitted && (
-          <pre
-            style={{
-              margin: 0,
-              padding: "1rem",
-              backgroundColor: "#f3f4f6",
-              borderRadius: "0.5rem",
-              fontSize: "0.875rem",
-            }}
-          >
-            {JSON.stringify(submitted, null, 2)}
-          </pre>
-        )}
-      </div>
-    );
-  },
+        >
+          {JSON.stringify(submitted, null, 2)}
+        </pre>
+      )}
+    </div>
+  );
+};
+
+export const Playground: Story = {
+  render: (args) => <PlaygroundStory {...args} />,
 };
 
 

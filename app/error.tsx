@@ -5,7 +5,7 @@ import { formatError } from "../utils/formatError";
 
 export default function GlobalRouteError({ error, reset }: { error: Error; reset: () => void }) {
   useEffect(() => {
-    // eslint-disable-next-line no-console
+     
     console.error("Route error:", formatError(error));
   }, [error]);
 

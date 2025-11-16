@@ -5,7 +5,7 @@ import { formatError } from "../utils/formatError";
 
 export default function GlobalError({ error, reset }: { error: Error; reset: () => void }) {
   useEffect(() => {
-    // eslint-disable-next-line no-console
+     
     console.error("Global app error:", formatError(error));
   }, [error]);
 

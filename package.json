@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prepare": "husky install",
     "build:mobile": "NEXT_OUTPUT=export next build",
     "cap:sync": "npx cap sync",
     "cap:open:ios": "npx cap open ios",
@@ -34,10 +36,15 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
     "storybook": "8.4.7",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
   }
 }

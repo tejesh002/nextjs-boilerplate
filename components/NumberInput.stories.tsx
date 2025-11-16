@@ -18,20 +18,22 @@ export default meta;
 
 type Story = StoryObj<typeof NumberInput>;
 
+const DefaultStory = (args: React.ComponentProps<typeof NumberInput>) => {
+  const [value, setValue] = useState(args.value ?? "");
+  return (
+    <NumberInput
+      {...args}
+      value={value}
+      onChange={(event) => {
+        setValue(event.target.value);
+        args.onChange?.(event);
+      }}
+    />
+  );
+};
+
 export const Default: Story = {
-  render: (args) => {
-    const [value, setValue] = useState(args.value ?? "");
-    return (
-      <NumberInput
-        {...args}
-        value={value}
-        onChange={(event) => {
-          setValue(event.target.value);
-          args.onChange?.(event);
-        }}
-      />
-    );
-  },
+  render: (args) => <DefaultStory {...args} />,
 };
 
 export const WithHelperText: Story = {
